@@ -1,0 +1,63 @@
+<idea-plugin>
+    <id>com.jnart.opencode.intellij-opencode-plugin</id>
+    <name>OpenCode Terminal Launcher</name>
+    <version>1.0.0</version>
+    <vendor email="joao.alves64@gmail.com" url="https://github.com/joaonart">João Alves (j-nart)</vendor>
+
+    <description><![CDATA[
+      <h3>OpenCode Terminal Launcher</h3>
+      <p>A fast, seamless IntelliJ IDEA extension that adds a header toolbar button and a dedicated keyboard shortcut to open the integrated terminal and run the <code>opencode</code> CLI directly in your active project workspace.</p>
+
+      <h4>✨ Key Features</h4>
+      <ul>
+        <li><b>Header Toolbar Action:</b> Accessible directly from the top-right header toolbar (<code>MainToolbarRight</code> in Modern UI).</li>
+        <li><b>Keyboard Shortcut:</b> Quick trigger using <code>Cmd+Option+O</code> (macOS) or <code>Ctrl+Alt+O</code> (Windows/Linux).</li>
+        <li><b>Integrated Terminal:</b> Opens a dedicated terminal tab titled <b>OpenCode</b> pointing to the current project root path.</li>
+        <li><b>Theme Aware:</b> Features the official OpenCode logo with automatic light and dark IDE theme switching.</li>
+      </ul>
+
+      <h4>🌐 Developer</h4>
+      <p>Developed by <b>João Alves (j-nart)</b>. GitHub: <a href="https://github.com/joaonart">https://github.com/joaonart</a></p>
+
+      <h4>⌨️ Default Keyboard Shortcut</h4>
+      <ul>
+        <li><b>macOS:</b> <code>Cmd + Option + O</code></li>
+        <li><b>Windows / Linux:</b> <code>Ctrl + Alt + O</code></li>
+      </ul>
+
+      <hr/>
+      <p><b>⚠️ Unofficial Plugin Disclaimer:</b> This is an independent, community-developed plugin created by <b>João Alves (j-nart)</b> and is not affiliated with, endorsed by, or officially associated with OpenCode.</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <h3>Version 1.0.0</h3>
+      <ul>
+        <li>Initial release of OpenCode Terminal Launcher.</li>
+        <li>Added header toolbar action in the top-right corner.</li>
+        <li>Added default keyboard shortcut (<code>Cmd+Option+O</code> / <code>Ctrl+Alt+O</code>).</li>
+        <li>Integrated terminal launcher targeting active project root directory.</li>
+        <li>Included official OpenCode branding with light/dark theme icon support.</li>
+      </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.terminal</depends>
+
+    <actions>
+        <action id="OpenCode.RunTerminalAction"
+                class="com.jnart.opencode.OpenCodeAction"
+                text="OpenCode Terminal"
+                description="Open OpenCode in IntelliJ Terminal"
+                icon="/icons/opencodeIcon.svg">
+            <!-- Dedicated Keyboard Shortcut (Ctrl+Alt+O / Cmd+Option+O) -->
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt O"/>
+
+            <!-- Modern UI Main Toolbar Right Header -->
+            <add-to-group group-id="MainToolbarRight" anchor="last"/>
+            <!-- Classic UI Main Toolbar -->
+            <add-to-group group-id="MainToolbar" anchor="last"/>
+            <!-- Tools Menu fallback -->
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
