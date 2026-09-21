@@ -2,7 +2,7 @@
     <id>com.jnart.opencode.intellij-opencode-plugin</id>
     <name>OpenCode Terminal Launcher</name>
     <version>1.0.0</version>
-    <vendor email="joao.alves64@gmail.com" url="https://github.com/joaonart">João Alves (j-nart)</vendor>
+    <vendor email="joao.alves64@gmail.com" url="https://github.com/joaonart/intellij-opencode-plugin">João Alves (j-nart)</vendor>
 
     <description><![CDATA[
       <h3>OpenCode Terminal Launcher</h3>
@@ -16,8 +16,9 @@
         <li><b>Theme Aware:</b> Features the official OpenCode logo with automatic light and dark IDE theme switching.</li>
       </ul>
 
-      <h4>🌐 Developer</h4>
-      <p>Developed by <b>João Alves (j-nart)</b>. GitHub: <a href="https://github.com/joaonart">https://github.com/joaonart</a></p>
+      <h4>🌐 Source Code & Repository</h4>
+      <p>Developed by <b>João Alves (j-nart)</b>.<br/>
+      GitHub Repository: <a href="https://github.com/joaonart/intellij-opencode-plugin">https://github.com/joaonart/intellij-opencode-plugin</a></p>
 
       <h4>⌨️ Default Keyboard Shortcut</h4>
       <ul>
