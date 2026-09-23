@@ -8,10 +8,15 @@ An extension for IntelliJ IDEA and JetBrains IDEs that adds an icon to the main 
 
 ---
 
+## ⚡ Dynamic Plugin (No Restart Required!)
+This plugin supports **Dynamic Plugin Loading**. It activates immediately upon installation without requiring an IDE restart.
+
+---
+
 ## 🌐 Developer & Repository
 
 - **Vendor / Author:** João Alves (j-nart)
-- **GitHub:** [https://github.com/joaonart](https://github.com/joaonart)
+- **GitHub:** [https://github.com/joaonart/intellij-opencode-plugin](https://github.com/joaonart/intellij-opencode-plugin)
 - **Contact:** joao.alves64@gmail.com
 
 ---
@@ -74,13 +79,7 @@ The compiled plugin ZIP package will be generated at:
 3. Click the gear icon ⚙️ in the top-right corner of the Plugins window.
 4. Select **Install Plugin from Disk...**.
 5. Choose the generated `.zip` file (`intellij-opencode-plugin-1.0.0.zip`).
-6. Restart IntelliJ IDEA.
-
-### 4. Run Sandbox IDE for Testing
-To launch a sandboxed instance of IntelliJ IDEA for development/testing:
-```bash
-./gradlew runIde
-```
+6. The plugin will be enabled **instantly** (no IDE restart required)!
 
 ---
 

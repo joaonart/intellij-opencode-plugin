@@ -10,6 +10,7 @@
 
       <h4>✨ Key Features</h4>
       <ul>
+        <li><b>Dynamic Plugin:</b> Instant activation upon installation without requiring an IDE restart.</li>
         <li><b>Header Toolbar Action:</b> Accessible directly from the top-right header toolbar (<code>MainToolbarRight</code> in Modern UI).</li>
         <li><b>Keyboard Shortcut:</b> Quick trigger using <code>Cmd+Option+O</code> (macOS) or <code>Ctrl+Alt+O</code> (Windows/Linux).</li>
         <li><b>Integrated Terminal:</b> Opens a dedicated terminal tab titled <b>OpenCode</b> pointing to the current project root path.</li>
@@ -34,6 +35,7 @@
       <h3>Version 1.0.0</h3>
       <ul>
         <li>Initial release of OpenCode Terminal Launcher.</li>
+        <li>Dynamic Plugin loading support (no IDE restart required).</li>
         <li>Added header toolbar action in the top-right corner.</li>
         <li>Added default keyboard shortcut (<code>Cmd+Option+O</code> / <code>Ctrl+Alt+O</code>).</li>
         <li>Integrated terminal launcher targeting active project root directory.</li>
@@ -53,9 +55,9 @@
             <!-- Dedicated Keyboard Shortcut (Ctrl+Alt+O / Cmd+Option+O) -->
             <keyboard-shortcut keymap="$default" first-keystroke="control alt O"/>
 
-            <!-- Modern UI Main Toolbar Right Header -->
+            <!-- Modern UI Toolbar Groups -->
             <add-to-group group-id="MainToolbarRight" anchor="last"/>
-            <!-- Classic UI Main Toolbar -->
+            <add-to-group group-id="NavBarToolWindowGroup" anchor="last"/>
             <add-to-group group-id="MainToolbar" anchor="last"/>
             <!-- Tools Menu fallback -->
             <add-to-group group-id="ToolsMenu" anchor="last"/>

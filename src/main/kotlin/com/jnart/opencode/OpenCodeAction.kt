@@ -29,7 +29,8 @@ class OpenCodeAction : DumbAwareAction() {
     }
 
     override fun update(e: AnActionEvent) {
-        // Display button only when an active project is open in the IDE
-        e.presentation.isEnabledAndVisible = e.project != null
+        val hasProject = e.project != null
+        e.presentation.isVisible = true
+        e.presentation.isEnabled = hasProject
     }
 }
